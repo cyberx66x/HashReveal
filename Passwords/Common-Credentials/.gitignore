@@ -1,0 +1,14 @@
+# 1. تجاهل كل شيء في المشروع كقاعدة عامة
+*
+
+# 2. استثناء (عدم تجاهل) ملفات الأكواد والملفات الأساسية
+!*.py
+!*.c
+!README.md
+!README.html
+!HashReveal_README.pdf
+!.gitignore
+
+# 3. استثناء مجلد Passwords بالكامل لكي يتم رفعه
+!Passwords/
+!Passwords/**
