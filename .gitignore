@@ -1,0 +1,20 @@
+# 1. تجاهل كل شيء في المشروع كقاعدة عامة
+*
+
+# 2. استثناء ملفات لغة بايثون ولغة C في المسار الرئيسي
+!/*.py
+!/*.c
+
+# 3. استثناء الملفات الأساسية للمشروع (اختياري لكن مفيد لـ GitHub)
+!.gitignore
+!README.md
+
+# 4. السماح لـ Git بالدخول إلى مجلد Passwords
+!Passwords/
+
+# 5. تجاهل كل شيء داخل مجلد Passwords (مثل مجلد Malware وغيرها)
+Passwords/*
+
+# 6. السماح بدخول مجلد Common-Credentials فقط واستثناء محتوياته من التجاهل
+!Passwords/Common-Credentials/
+!Passwords/Common-Credentials/*
