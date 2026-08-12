@@ -1,14 +1,17 @@
-# 1. تجاهل كل شيء في المشروع كقاعدة عامة
+# تجاهل كل شيء
 *
 
-# 2. استثناء (عدم تجاهل) ملفات الأكواد والملفات الأساسية
+# استثناء ملفات الأكواد في المجلد الرئيسي
 !*.py
 !*.c
 !README.md
-!README.html
-!HashReveal_README.pdf
 !.gitignore
+!funding.json
 
-# 3. استثناء مجلد Passwords بالكامل لكي يتم رفعه
+# السماح بدخول مجلد Passwords ومجلد Common-Credentials
 !Passwords/
-!Passwords/**
+Passwords/*
+!Passwords/Common-Credentials/
+
+# السماح برفع كل محتويات Common-Credentials
+!Passwords/Common-Credentials/*
